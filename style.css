@@ -28,7 +28,7 @@ main{
     padding: 30px 40px;
 }
 
-
+/*top section, input field and button*/
 .add-new-item{
     position: centre;
     background: #FFFFFF;
@@ -37,6 +37,7 @@ main{
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+/*input field*/
 .add-new-item #addItem{
     margin-top: 3%;
     width: 80%;
@@ -48,12 +49,22 @@ main{
     position: relative;
 }
 
-/*when clicked, border is highlighted*/
+.add-new-item #alertText{
+    margin-top: 5px;
+    font-size:10px;
+    padding-left: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: red;
+}
+
+/*when clicked, border is highlighted on input field*/
 .add-new-item #addItem:focus{
     outline: none;
     border-color: rgb(87, 87, 87);
 }
 
+/*submit button*/
 .add-new-item #submitItem{
     margin-top: 3.3%;
     position: relative;
@@ -66,6 +77,7 @@ main{
     cursor: pointer;
 }
 
+/*bottom section, list items*/
 section{
     margin-top: 10px;
     position: centre;
@@ -73,4 +85,27 @@ section{
     padding: 30px 30px;
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+
+}
+
+/* each task item*/
+.task{
+height: 50px;
+margin-top: 10px;
+padding: 5px 10px ;
+border-bottom: #d1d1d1;  
+display: flex;
+justify-content: space-between;
+align-items: center;
+border-bottom: 2px solid grey;
+}
+
+button{
+    width: 50px;
+    height: 30px;
+    background: rgb(216, 216, 216);
+    border-radius: 3px;
+    border: 0px;
+    cursor: pointer;
+    
 }

@@ -17,15 +17,17 @@
         <!-- add new item  -->
         <div class="add-new-item">
             <h2>To-Do list</h2>
-            <input id="addItem" type="text" placeholder="Create a new todo" name="addItem" >
+            <input id="addItem" type="text" placeholder="Create a new todo" name="addItem" required>
             <input id="submitItem" type="submit" value="Add" onclick="submit()">
+            <p id="alertText"></p>
         </div>
 
         <section>
             <!-- list item  -->
+            <div id="tasks"></div>
         </section>
        
-        
+        <script src="app.js"></script>
     </main>
     
 </body>
