@@ -1,15 +1,19 @@
+//Function when submit
 function submit() {
     let alertText = document.getElementById('alertText');
-    let task = document.getElementById("addItem").value;
+    let taskValue = document.getElementById("addItem");
 
-    // if text field is empty, red alert text and print message 
-    if(task == ""){
+    // if text field is empty
+    if(taskValue.value == ""){
+        
+        //red alert text and print message
+        alertText.style.color = 'red';
         alertText.innerHTML = "Please enter a task";
-        alert('Please enter a Task');
     }
 
     //if text field is written 
     else{
+
         // grey alert text and print message
         alertText.style.color = 'grey';
         alertText.innerHTML = "Task added";
@@ -17,15 +21,23 @@ function submit() {
         //adds task
         document.getElementById('tasks').innerHTML += 
         `
-        <div class="task">
-            <span id="taskName">
-            . ${task}
-            </span>
+        <div id="task">
+            <li id="taskName">
+            ${taskValue.value}
+            </li>
 
-            <button class="deleteButton" type="button">Delete</button>
+            <button class="deleteButton" onclick="deleteThis()" >Delete</button>
         </div>
-
         `
+        //clears the input field
+        taskValue.value = '';
 
-    }
+
+    };
 }
+
+function deleteThis(){
+    document.getElementById('task').remove();
+};
+
+

@@ -55,7 +55,6 @@ main{
     padding-left: 5px;
     font-family: sans-serif;
     font-weight: bold;
-    color: red;
 }
 
 /*when clicked, border is highlighted on input field*/
@@ -89,18 +88,23 @@ section{
 }
 
 /* each task item*/
-.task{
-height: 50px;
-margin-top: 10px;
-padding: 5px 10px ;
-border-bottom: #d1d1d1;  
-display: flex;
-justify-content: space-between;
-align-items: center;
-border-bottom: 2px solid grey;
+#task{
+    height: 50px;
+    padding: 5px 10px ;
+    border-bottom: #d1d1d1;  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid grey;
 }
 
-button{
+#task li{
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+#task button{
     width: 50px;
     height: 30px;
     background: rgb(216, 216, 216);
